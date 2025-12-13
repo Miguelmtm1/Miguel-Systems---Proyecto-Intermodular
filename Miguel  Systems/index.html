@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel Systems</title>
+  <meta name="description" content="Consultora tecnológica especializada en desarrollo web, cloud y ciberseguridad">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo de Miguel Systems">
+      <span>Miguel Systems</span>
+    </div>
+
+    <div class="menu-btn">&#9776;</div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyecto-reservas.html">Proyecto</a></li>
+        <li><a href="cronologia.html">Cronología</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero-index" class="hero">
+      <div class="hero-content">
+        <h1>Impulsamos tu transformación digital</h1>
+        <p>Soluciones tecnológicas a medida para hacer crecer tu negocio</p>
+        <a href="contacto.html" class="btn-hero">Contáctanos</a>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios">
+      <h2>Nuestros servicios</h2>
+
+      <div class="servicios-grid">
+        <div class="servicio">
+          <h3>Desarrollo Web</h3>
+          <p>Creación de sitios web modernos, rápidos y adaptados a tus necesidades</p>
+        </div>
+
+        <div class="servicio">
+          <h3>Consultoría Tecnológica</h3>
+          <p>Te ayudamos a tomar decisiones estratégicas para impulsar tu negocio</p>
+        </div>
+
+        <div class="servicio">
+          <h3>Soluciones Cloud</h3>
+          <p>Migración, optimización y gestión de servicios en la nube</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="beneficios">
+      <h2>¿Por qué elegir Miguel Systems?</h2>
+
+      <div class="beneficios-grid">
+        <div class="beneficio">
+          <h3>✅ Experiencia real</h3>
+          <p>Hemos trabajado con proyectos reales que nos permiten ofrecer soluciones prácticas.</p>
+        </div>
+
+        <div class="beneficio">
+          <h3>⚡ Respuesta rápida</h3>
+          <p>Atención directa, sin esperas ni procesos complicados.</p>
+        </div>
+
+        <div class="beneficio">
+          <h3>🔒 Seguridad primero</h3>
+          <p>Aplicamos buenas prácticas de ciberseguridad en cada proyecto.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+      <h2>¿Listo para impulsar tu negocio?</h2>
+      <a href="contacto.html" class="btn-hero">Hablemos</a>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="sobre-nosotros">
+      <h2>Sobre nosotros</h2>
+      <p>
+        En Miguel Systems ayudamos a empresas y emprendedores a dar el salto digital.
+        Combinamos tecnología, estrategia y experiencia para ofrecer soluciones que realmente funcionan.
+      </p>
+    </section>
+
+    <!-- CRONOLOGÍA -->
+    <section class="cronologia">
+      <h2>Cronología</h2>
+
+      <div class="linea-tiempo">
+        <div class="evento">
+          <span class="fecha">2023</span>
+          <p>Inicio del proyecto Miguel Systems.</p>
+        </div>
+
+        <div class="evento">
+          <span class="fecha">2024</span>
+          <p>Primeros clientes y primeros proyectos web.</p>
+        </div>
+
+        <div class="evento">
+          <span class="fecha">2025</span>
+          <p>Expansión a consultoría tecnológica y soluciones cloud</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto">
+      <h2>Contacto</h2>
+
+      <form class="formulario-contacto"
+            action="https://morning-paper-a0fc.contry-1990.workers.dev"
+            method="POST">
+
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+        <input type="email" name="email" placeholder="Tu correo" required>
+
+        <select name="motivo" required>
+          <option value="">Selecciona un motivo</option>
+          <option value="consulta">Consulta general</option>
+          <option value="proyecto">Nuevo proyecto</option>
+          <option value="soporte">Soporte técnico</option>
+        </select>
+
+        <textarea name="mensaje" placeholder="Tu mensaje" minlength="10" required></textarea>
+
+        <label class="checkbox-privacidad">
+          <input type="checkbox" name="privacidad" required>
+          Acepto la política de privacidad
+        </label>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy;2025 Miguel Systems. Todos los derechos reservados</p>
+    <a href="#">Aviso legal</a>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('nav ul');
+
+    menuBtn.addEventListener('click', () => {
+      nav.style.display = nav.style.display == 'flex' ? 'none' : 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.background = 'white';
+      nav.style.padding = '1rem';
+    });
+  </script>
+
+</body>
+</html>

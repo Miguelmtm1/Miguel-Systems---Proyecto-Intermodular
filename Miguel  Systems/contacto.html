@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Miguel Systems</title>
+  <meta name="description" content="Formulario de contacto de Miguel Systems.">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo de Miguel Systems">
+    <span>Miguel Systems</span>
+  </div>
+
+  <div class="menu-btn">&#9776;</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="proyecto-reservas.html">Proyecto</a></li>
+      <li><a href="cronologia.html">Cronología</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="contacto">
+    <h2>Contacto</h2>
+
+    <form class="formulario-contacto"
+          action="https://morning-paper-a0fc.contry-1990.workers.dev"
+          method="POST">
+
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+      <input type="email" name="email" placeholder="Tu correo" required>
+
+      <select name="motivo" required>
+        <option value="">Selecciona un motivo</option>
+        <option value="consulta">Consulta general</option>
+        <option value="proyecto">Nuevo proyecto</option>
+        <option value="soporte">Soporte técnico</option>
+      </select>
+
+      <textarea name="mensaje" placeholder="Tu mensaje" minlength="10" required></textarea>
+
+      <label class="checkbox-privacidad">
+        <input type="checkbox" name="privacidad" required>
+        Acepto la política de privacidad
+      </label>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+  </section>
+</main>
+
+<footer>
+  <p>&copy;2025 Miguel Systems. Todos los derechos reservados</p>
+  <a href="#">Aviso legal</a>
+</footer>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const nav = document.querySelector('nav ul');
+
+  menuBtn.addEventListener('click', () => {
+    nav.style.display = nav.style.display == 'flex' ? 'none' : 'flex';
+    nav.style.flexDirection = 'column';
+    nav.style.background = 'white';
+    nav.style.padding = '1rem';
+  });
+</script>
+
+</body>
+</html>

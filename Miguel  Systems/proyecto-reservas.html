@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto de Reservas | Miguel Systems</title>
+  <meta name="description" content="Proyecto de reservas desarrollado por Miguel Systems con HTML, CSS y JavaScript.">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo de Miguel Systems">
+    <span>Miguel Systems</span>
+  </div>
+
+  <div class="menu-btn">&#9776;</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="proyecto-reservas.html">Proyecto</a></li>
+      <li><a href="cronologia.html">Cronología</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="layout-proyecto">
+
+  <section class="contenido-proyecto">
+    <h2>Proyecto de Reservas</h2>
+    <p>
+      Nuestro sistema de reservas permite a negocios gestionar citas, servicios o alquileres de forma rápida y eficiente. 
+      
+    </p>
+  </section>
+
+  <aside class="aside-proyecto">
+    <h3>Detalles</h3>
+    <p>Incluye gestión de reservas, confirmación de citas, panel de administración y diseño responsive para garantizar una experiencia fluida en móviles y ordenadores..</p>
+  </aside>
+
+</main>
+
+<section class="tabla-proyecto">
+  <h2>Resumen del Proyecto</h2>
+
+  <table>
+    <tr>
+      <th>Año</th>
+      <th>Estado</th>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>Inicio del proyecto</td>
+    </tr>
+    <tr>
+      <td>2024</td>
+      <td>Primeros clientes</td>
+    </tr>
+    <tr>
+      <td>2025</td>
+      <td>Expansión a consultoría y cloud</td>
+    </tr>
+  </table>
+</section>
+
+<footer>
+  <p>&copy;2025 Miguel Systems. Todos los derechos reservados</p>
+  <a href="#">Aviso legal</a>
+</footer>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const nav = document.querySelector('nav ul');
+
+  menuBtn.addEventListener('click', () => {
+    nav.style.display = nav.style.display == 'flex' ? 'none' : 'flex';
+    nav.style.flexDirection = 'column';
+    nav.style.background = 'white';
+    nav.style.padding = '1rem';
+  });
+</script>
+
+</body>
+</html>
